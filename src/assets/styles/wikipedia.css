@@ -1,0 +1,48 @@
+/* General styles for Wikipedia pages */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar styling */
+#mw-head {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #a2a9b1;
+  padding: 10px 0;
+}
+
+#p-personal {
+  margin-right: 20px;
+}
+
+#p-search {
+  margin-left: 20px;
+}
+
+/* Content area styling */
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add more styles as needed */
+/* ... previous styles ... */
+
+/* Theme-specific styles */
+body.theme-light {
+  background-color: #ffffff;
+  color: #202122;
+}
+
+body.theme-dark {
+  background-color: #202122;
+  color: #ffffff;
+}
+
+body.theme-sepia {
+  background-color: #f4ecd8;
+  color: #5b4636;
+}
+
+/* Add more theme-specific styles as needed */

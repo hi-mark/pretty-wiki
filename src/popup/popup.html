@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pretty Wiki Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pretty Wiki Settings</h1>
+      <div class="setting">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="sepia">Sepia</option>
+        </select>
+      </div>
+      <div class="setting">
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" min="12" max="24" step="1" />
+        <span id="fontSizeValue"></span>
+      </div>
+      <div class="setting">
+        <label for="fontFamily">Font Family:</label>
+        <select id="fontFamily">
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="'Times New Roman', serif">Times New Roman</option>
+        </select>
+      </div>
+      <div class="setting">
+        <label for="lineSpacing">Line Spacing:</label>
+        <input type="range" id="lineSpacing" min="1" max="2" step="0.1" />
+        <span id="lineSpacingValue"></span>
+      </div>
+      <button id="saveButton">Save Settings</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
