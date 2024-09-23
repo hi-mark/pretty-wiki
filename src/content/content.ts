@@ -1,11 +1,20 @@
 function replaceLogo() {
-  const logoElement = document.querySelector(".mw-wiki-logo") as HTMLElement;
-  if (logoElement) {
-    logoElement.style.backgroundImage = `url(${chrome.runtime.getURL(
-      "assets/icons/pretty-wiki-logo.png"
-    )})`;
-    logoElement.style.backgroundPosition = "center";
-    logoElement.style.backgroundSize = "contain";
+  // Select the main logo container
+  const logoContainer = document.querySelector(".mw-logo");
+  if (logoContainer) {
+    // Remove existing images within the logo container
+    const images = logoContainer.querySelectorAll("img");
+    images.forEach((img) => img.remove());
+
+    // Create a new image element for the custom logo
+    const customLogo = document.createElement("img");
+    customLogo.src = chrome.runtime.getURL("assets/icons/pretty-wiki-logo.png");
+    customLogo.alt = "Custom Logo";
+    customLogo.style.width = "auto"; // Adjust width as needed
+    customLogo.style.height = "50px"; // Adjust height as needed
+
+    // Append the custom logo to the logo container
+    logoContainer.appendChild(customLogo);
   }
 }
 
