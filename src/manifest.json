@@ -30,7 +30,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["assets/icons/pretty-wiki-logo.png"],
+      "resources": ["assets/icons/pretty-wiki-logo.svg"],
       "matches": ["https://*.wikipedia.org/*"]
     }
   ]
